@@ -12,11 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Fay
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Fay
+  HumorStats:
+  - Type: 3
+    Value: 0
+  AuditionLines:
+  - '"Greetings, funny dressed fellow. The winds of fate say... this encounter will
+    present an opportunity that we should both consider carefully."'
+  SuccessfulAuditionLines:
+  - '"Ah... the tides change. A bright future awaits us. I hear it on the winds,
+    in the air."'
+  SuccessfulPerformanceLines:
+  - '"And that, my dear audience, is why we never sneak second helpings of jam-covered
+    toast. Fate will strike you down for such terrible misdeeds!"'
+  UnscathedPerformanceLines:
+  - '"What? Never heard of a murderous mongoose before? It''s nothing to take lightly,
+    you know. They tore a poor farmer to shreds once."'
+  ScathedPerformanceLines:
+  - '"They say tomatos are good for the soul. These are quite tasty, too. Fate has
+    granted me a boon on this day."'
+  DeathLines:
+  - '"Death is but another stop aboard this neverending carriage of life."'

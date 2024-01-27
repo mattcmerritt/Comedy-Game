@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Grimaldi
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Grimaldi
+  HumorStats:
+  - Type: 4
+    Value: 0
+  AuditionLines:
+  - '"You fixin'' to make someone laugh? I got bells, jangles, trinkets and more!"'
+  SuccessfulAuditionLines:
+  - '"Great! Hey, where do you keep your banana peels...? Bottom shelf?"'
+  SuccessfulPerformanceLines:
+  - '"I call this one... the slip and slide! Watch me slip, and watch me- whoa! Watch
+    out, jester incoming!"'
+  UnscathedPerformanceLines:
+  - '"No, don''t look! My tambourine broke! Shoot, where did my bells roll off to?"'
+  ScathedPerformanceLines:
+  - '"Come on... why aren''t you laughing?! I used the cowbell and everything!"'
+  DeathLines:
+  - '"I knew I shouldn''t have accepted this gig! Fate, you cruel thing, why must
+    you torment me so?! Have I not danced in a funny looking hat enough?"'

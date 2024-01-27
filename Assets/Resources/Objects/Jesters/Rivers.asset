@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Rivers
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Rivers
+  HumorStats:
+  - Type: 5
+    Value: 0
+  AuditionLines:
+  - '"Another fool here to beg for my talents. Grovel, and perhaps I will join your
+    stupid ''troupe''."'
+  SuccessfulAuditionLines:
+  - '"So long as the pay is good, I don''t really care."'
+  SuccessfulPerformanceLines:
+  - '"Flawless as always."'
+  UnscathedPerformanceLines:
+  - '"Perhaps some minor missteps were made..."'
+  ScathedPerformanceLines:
+  - '"Silence! This is not behavior befitting of a civilized crowd!"'
+  DeathLines:
+  - '"Dragged to my death by idiots! I always knew it would end like this!"'

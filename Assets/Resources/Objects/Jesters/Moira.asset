@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Moira
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Moira
+  HumorStats:
+  - Type: 4
+    Value: 0
+  AuditionLines:
+  - '"Is there room for my 7 foot unicycle in here?"'
+  SuccessfulAuditionLines:
+  - '"You won''t regret this! Wait till you see my plate act!"'
+  SuccessfulPerformanceLines:
+  - '"That show made me feel like I was on top of the world!! ...Or maybe that was
+    just my 7 foot unicycle."'
+  UnscathedPerformanceLines:
+  - '"Those royals are mighty high, higher than my act, and I think they thought
+    we were mighty low."'
+  ScathedPerformanceLines:
+  - '"My foot caught on my petal today and no one found it charming."'
+  DeathLines:
+  - '"I''m meant to ride unicycles, not a boat down the River Styx!"'

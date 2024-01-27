@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Kinison
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Kinison
+  HumorStats:
+  - Type: 3
+    Value: 0
+  AuditionLines:
+  - '"I believe the best jokes are the ones that leave the audience in awe!"'
+  SuccessfulAuditionLines:
+  - '"My good friend, this is the start of a wonderful relationship!"'
+  SuccessfulPerformanceLines:
+  - '"A Benedictine monk taught me that one! Thanks, Brother Pierro."'
+  UnscathedPerformanceLines:
+  - '"Ah, did the goat in the abbey joke go a bit too far...?"'
+  ScathedPerformanceLines:
+  - '"No matter. Peasants... Kings... Cattle... they all feed on the same grass.
+    None could possibly understand."'
+  DeathLines:
+  - '"Marched right to my death, just as the fortune teller in Bavaria foretold!"'

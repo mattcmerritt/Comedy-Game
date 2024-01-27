@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Aykroyd
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Aykroyd
+  HumorStats:
+  - Type: 1
+    Value: 0
+  AuditionLines:
+  - '"Hire me for a pun-tastic time! Puns included!"'
+  SuccessfulAuditionLines:
+  - '"Call me bread, because it seems like you ''knead'' me!"'
+  SuccessfulPerformanceLines:
+  - '"I''m on the ball today! That one really got the audience rolling!"'
+  UnscathedPerformanceLines:
+  - '"No need to boo, I know that one sucked. You''d think this were a haunted house
+    or something..."'
+  ScathedPerformanceLines:
+  - '"What''s red and moving quickly to get off the stage? Me, covered in these rotten
+    tomatos."'
+  DeathLines:
+  - '"Ah... this joke is not funny at all..."'

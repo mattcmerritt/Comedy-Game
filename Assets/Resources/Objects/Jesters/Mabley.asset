@@ -12,11 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Mabley
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Mabley
+  HumorStats:
+  - Type: 2
+    Value: 0
+  AuditionLines:
+  - '"A comedy troupe! I''d be honored to join! I''m new to comedy, but ready to
+    bring home the laughs!"'
+  SuccessfulAuditionLines:
+  - '"This should be quite fun! When do I start?"'
+  SuccessfulPerformanceLines:
+  - '"I nailed it! Did you see that? That went fantastic!"'
+  UnscathedPerformanceLines:
+  - '"Ah, not the best reactions from the crowd. That definitely could have gone
+    better..."'
+  ScathedPerformanceLines:
+  - '"This has been a rude awakening. I must practice more, lest I find myself at
+    death''s door..."'
+  DeathLines:
+  - '"No one told me how dangerous comedy could be!"'

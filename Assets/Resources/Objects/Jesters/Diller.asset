@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Diller
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Diller
+  HumorStats:
+  - Type: 5
+    Value: 0
+  AuditionLines:
+  - '"This level of comedy is rudimentary! I can far surpass your expectations!"'
+  SuccessfulAuditionLines:
+  - '"This will be child''s play. I practically have the audience laughing already."'
+  SuccessfulPerformanceLines:
+  - '"Elementary!"'
+  UnscathedPerformanceLines:
+  - '"I can''t believe I''m being booed by this lot! How ridiculous! How humiliating!"'
+  ScathedPerformanceLines:
+  - '"You all must have rocks for brains! How dare you!"'
+  DeathLines:
+  - '"I... I am a genius! I don''t deserve this fate! There must be a way out, somehow!"'
