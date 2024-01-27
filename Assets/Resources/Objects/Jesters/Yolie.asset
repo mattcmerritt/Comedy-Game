@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
-  m_Name: Naomi
+  m_Name: Yolie
   m_EditorClassIdentifier: 
-  Name: Naomi
+  Name: Yolie
   HumorStats:
-  - Type: 5
+  - Type: 3
     Value: 0
   AuditionLines:
-  - '"Why would I care if you think I''m funny? I would have to value your opinion
-    first."'
+  - '"You know what they say: the killer rabbits this time of year are the best travel
+    pillow!"'
   SuccessfulAuditionLines:
-  - '"Part of *your* troop? Well, I don''t know if you''re funny enough for me, but
-    you certainly look like a clown."'
+  - '"This is SPECTACULAR! Spectacles make the best comedy."'
   SuccessfulPerformanceLines:
-  - '"What can I say? I do it for the fans!"'
+  - '"Some call it hyperbole, I call it genius!"'
   UnscathedPerformanceLines:
-  - '"Wow... what a great crowd. Not dead. At all."'
+  - '"That audience was QUIET! Like they were shot by a canon into the depths of
+    the ocean."'
   ScathedPerformanceLines:
-  - '"They called me insensitive! I''m not insensitive, I just don''t care."'
+  - '"I think the audience would have preferred a plague to that last show..."'
   DeathLines:
-  - '"Death by snake? Who could have POSSIBLY seen this one coming."'
+  - '"Snakes? SNAKES?? I WANTED TO DIE BY DRAGONNN!!"'

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
+  m_Name: Quinn
+  m_EditorClassIdentifier: 
+  Name: Quinn
+  HumorStats:
+  - Type: 2
+    Value: 0
+  AuditionLines:
+  - '"Greetings, fools and gentlefools! ''Tis I, Quinn! Forget me, let''s talk about
+    you!"'
+  SuccessfulAuditionLines:
+  - '"Even I don''t know what I''ll say on stage ''til it happens! I''ll pick out
+    someone from the crowd!"'
+  SuccessfulPerformanceLines:
+  - '"Guess even the royals have a sense of humor too! Good! Always happy to make
+    fools of ''em all!"'
+  UnscathedPerformanceLines:
+  - '"Yikes, imagine being made a fool of right next to a fool. No hard feelings,
+    right troupe?"'
+  ScathedPerformanceLines:
+  - '"Tough crowd. Tough as the nails they threw at us."'
+  DeathLines:
+  - '"Ah. The joke was on me all along...!"'
