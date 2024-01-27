@@ -20,13 +20,19 @@ MonoBehaviour:
     Value: 1
   AuditionLines:
   - audition
+  - audition2
   SuccessfulAuditionLines:
   - successful audition
+  - successful audition2
   SuccessfulPerformanceLines:
   - successful act
+  - successful act2
   UnscathedPerformanceLines:
   - unscathed act
+  - unscathed act2
   ScathedPerformanceLines:
   - scathed act
+  - scathed act2
   DeathLines:
   - death
+  - death2
