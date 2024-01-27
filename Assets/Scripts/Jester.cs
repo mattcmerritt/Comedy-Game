@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Jester : ScriptableObject
 {
+    // text elements for jester
     public string Name;
     public List<HumorStat> HumorStats; // a HumorStat has a enum value for type and a int for value
     [TextArea] public List<string> AuditionLines;
@@ -13,6 +14,9 @@ public class Jester : ScriptableObject
     [TextArea] public List<string> UnscathedPerformanceLines;
     [TextArea] public List<string> ScathedPerformanceLines;
     [TextArea] public List<string> DeathLines;
+
+    // visual information for jester
+    public Sprite IdleSprite;
 
     // functions to fetch random dialogue lines during gameplay
     public string FetchRandomAuditionLine()

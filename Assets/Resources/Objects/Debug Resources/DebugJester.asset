@@ -36,3 +36,4 @@ MonoBehaviour:
   DeathLines:
   - death
   - death2
+  IdleSprite: {fileID: -1494455363, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}

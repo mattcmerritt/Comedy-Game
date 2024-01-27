@@ -9,6 +9,11 @@ public class JesterInventory : MonoBehaviour
 
     [SerializeField] public static JesterInventory Instance;
 
+    private void Start()
+    {
+        Instance = this;
+    }
+
     public bool AddJester(Jester jester)
     {
         if (SelectedJesters.Count < TroupeSize)

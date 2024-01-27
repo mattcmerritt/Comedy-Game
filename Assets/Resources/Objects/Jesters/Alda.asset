@@ -31,3 +31,4 @@ MonoBehaviour:
   DeathLines:
   - '"Wait, I never got to write down that last story! At least let me finish my
     script!"'
+  IdleSprite: {fileID: 0}
