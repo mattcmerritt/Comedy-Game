@@ -12,11 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Desmond
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Desmond
+  HumorStats:
+  - Type: 7
+    Value: 0
+  AuditionLines:
+  - '"My dad wanted me to work in something other than comedy, so I always worked
+    hard to make him roll with laughter. Guess I succeeded, because pursuing comedy''s
+    got him rolling in his grave!"'
+  SuccessfulAuditionLines:
+  - '"I would make a joke and say your choice was a grave mistake, but I already
+    dug up those bones."'
+  SuccessfulPerformanceLines:
+  - '"That was a real Monsta Mash!"'
+  UnscathedPerformanceLines:
+  - '"Geez, that''s a bone dry crowd."'
+  ScathedPerformanceLines:
+  - '"They were silent as the grave out there tonight... not great."'
+  DeathLines:
+  - '"Well... I think that''s the nail in my coffin."'

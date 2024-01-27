@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Cathilda
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Cathilda
+  HumorStats:
+  - Type: 6
+    Value: 0
+  AuditionLines:
+  - '"Most elders claim to be wise, but I claim to be funny!"'
+  SuccessfulAuditionLines:
+  - '"Hope you enjoy all the stories these old bones have to offer."'
+  SuccessfulPerformanceLines:
+  - '"Those laughs remind me of my grandkiddies!"'
+  UnscathedPerformanceLines:
+  - '"Oh my, that audience caused a bit of a ruckus."'
+  ScathedPerformanceLines:
+  - '"I don''t understand! Doesn''t everyone love a good story of the ages? Well,
+    my ages."'
+  DeathLines:
+  - '"I didn''t have too much time left anyway, kiddo."'

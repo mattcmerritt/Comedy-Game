@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Garofalo
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Garofalo
+  HumorStats:
+  - Type: 0
+    Value: 0
+  AuditionLines:
+  - '*Garofalo points to their own face, and smiles. They reach out for a handshake.*'
+  SuccessfulAuditionLines:
+  - '*Garofalo nods enthusiastically.*'
+  SuccessfulPerformanceLines:
+  - '*Garofalo gives a hearty bow and revels in the applause.*'
+  UnscathedPerformanceLines:
+  - '*Garofalo hides their face in shame. You think you see tears forming.*'
+  ScathedPerformanceLines:
+  - '*Garofalo sticks out their tongue and ducks to avoid the tomatos.*'
+  DeathLines:
+  - '*Garofalo cowers in fear, shaking and crying.*'

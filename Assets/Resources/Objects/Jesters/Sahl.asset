@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Sahl
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Sahl
+  HumorStats:
+  - Type: 7
+    Value: 0
+  AuditionLines:
+  - '"You don''t want me on stage, trust me. I can make the audience laugh as easily
+    as I can give them a fright."'
+  SuccessfulAuditionLines:
+  - '"Went against your better judgement, eh? This''ll be fun."'
+  SuccessfulPerformanceLines:
+  - '"Another satisfied crowd. Tell me when you''ve got a real challenge."'
+  UnscathedPerformanceLines:
+  - '"Tch. Nothing I haven''t dealt with before."'
+  ScathedPerformanceLines:
+  - '"How obnoxious. You lot are testing my patience."'
+  DeathLines:
+  - '"Wait! I''m not ready to die! I still have so much to do!"'

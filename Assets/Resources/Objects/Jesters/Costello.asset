@@ -12,11 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Costello
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Costello
+  HumorStats:
+  - Type: 1
+    Value: 0
+  AuditionLines:
+  - '"My jokes will have the audience reeling! You won''t find a finer choice for
+    your troupe than this old fisherman."'
+  SuccessfulAuditionLines:
+  - '"You won''t regret this! I have practiced this routine to perfection! The audience
+    will fall for it hook, line and sinker!"'
+  SuccessfulPerformanceLines:
+  - '"And that, my friends, is how to tell a perfect joke! All you have to do is
+    fillet it!"'
+  UnscathedPerformanceLines:
+  - '"What has happened? Where is the uproarious laughter? Did something disturb
+    the waters?"'
+  ScathedPerformanceLines:
+  - '"Tomatos! Fish hate tomatos! Keep those away from me!"'
+  DeathLines:
+  - '"This is no laughing matter! Someone, reel me up!"'

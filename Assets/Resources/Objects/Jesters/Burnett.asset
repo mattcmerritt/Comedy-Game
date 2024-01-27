@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Burnett
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Burnett
+  HumorStats:
+  - Type: 2
+    Value: 0
+  AuditionLines:
+  - '"You''re putting me on the spot? Perfect!"'
+  SuccessfulAuditionLines:
+  - '"Quick give me a new prompt! Ooh, this will be so exciting!"'
+  SuccessfulPerformanceLines:
+  - '"My mother always said, ''A little audience work does wonders!''"'
+  UnscathedPerformanceLines:
+  - '"A terrible shame. Not how I imagined this going..."'
+  ScathedPerformanceLines:
+  - '"I need to be quicker on my feet next time... Mother, what would you do in my
+    shoes...?"'
+  DeathLines:
+  - '"Oh Burnett, how did you get yourself into this mess...?"'

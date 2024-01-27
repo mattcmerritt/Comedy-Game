@@ -16,9 +16,15 @@ MonoBehaviour:
   HumorStats:
   - Type: 0
     Value: 0
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  AuditionLines:
+  - '"I''m a bit of a clutz, but I fall with style, I swear!!"'
+  SuccessfulAuditionLines:
+  - '"I won''t let you down! I''ll only be falling down."'
+  SuccessfulPerformanceLines:
+  - '"A few scraped up knees ain''t nothin'' with applause like that!"'
+  UnscathedPerformanceLines:
+  - '"The crowd seemed pretty banged up tonight."'
+  ScathedPerformanceLines:
+  - '"Broken back and broken pride tonight."'
+  DeathLines:
+  - '"I wanted to fall into fame, not to my doom!!"'

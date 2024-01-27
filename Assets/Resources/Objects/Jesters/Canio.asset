@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b2baa148c3dce418a20a2bccc850dc, type: 3}
   m_Name: Canio
   m_EditorClassIdentifier: 
-  Name: 
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  Name: Canio
+  HumorStats:
+  - Type: 4
+    Value: 0
+  AuditionLines:
+  - '"Wanna hire me? I juggle better than I can make small talk."'
+  SuccessfulAuditionLines:
+  - '"Thanks for takin'' a chance on me, pal. I assure you that you won''t regret
+    it."'
+  SuccessfulPerformanceLines:
+  - '"That mighta'' been my best performance yet!"'
+  UnscathedPerformanceLines:
+  - '"Ah, I mighta'' be slightly out of practice. Needa'' work on that."'
+  ScathedPerformanceLines:
+  - '"Didn''t mean to throw that ball at the crowd. My bad."'
+  DeathLines:
+  - '"Death, the inevitable end to tha'' beautiful performance of life."'

@@ -13,10 +13,22 @@ MonoBehaviour:
   m_Name: Abbot
   m_EditorClassIdentifier: 
   Name: Abbot
-  HumorStats: []
-  AuditionLines: []
-  SuccessfulAuditionLines: []
-  SuccessfulPerformanceLines: []
-  UnscathedPerformanceLines: []
-  ScathedPerformanceLines: []
-  DeathLines: []
+  HumorStats:
+  - Type: 5
+    Value: 0
+  AuditionLines:
+  - '"A comedy troupe? My skills are better used elsewhere... but, I''ll join if
+    you insist."'
+  SuccessfulAuditionLines:
+  - '"I was simply testing you. I knew you had a keen eye for talent. This will certainly
+    be a worthwhile partnership."'
+  SuccessfulPerformanceLines:
+  - '"Heh... that one never fails."'
+  UnscathedPerformanceLines:
+  - '"Bah, that bit was a work in progress anyways. A crowd with no class can''t
+    recognize greatness."'
+  ScathedPerformanceLines:
+  - '"Well... that went just about as well as I expected it to. Who wrote this banal
+    material?!"'
+  DeathLines:
+  - '"So soon...? I was just starting to have fun..."'
