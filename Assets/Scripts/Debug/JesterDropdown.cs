@@ -38,41 +38,12 @@ public class JesterDropdown : MonoBehaviour
         ActiveJester = JesterList[0];
 
         // adding listeners for the buttons
-        AuditionButton.onClick.AddListener(() =>
-        {
-            int lineChoice = Random.Range(0, ActiveJester.AuditionLines.Count);
-            TextWindow.text = ActiveJester.AuditionLines[lineChoice];
-        });
-
-        SuccessfulAuditionButton.onClick.AddListener(() =>
-        {
-            int lineChoice = Random.Range(0, ActiveJester.SuccessfulAuditionLines.Count);
-            TextWindow.text = ActiveJester.SuccessfulAuditionLines[lineChoice];
-        });
-
-        SuccessfulPerformanceButton.onClick.AddListener(() =>
-        {
-            int lineChoice = Random.Range(0, ActiveJester.SuccessfulPerformanceLines.Count);
-            TextWindow.text = ActiveJester.SuccessfulPerformanceLines[lineChoice];
-        });
-
-        UnscathedPerformanceButton.onClick.AddListener(() =>
-        {
-            int lineChoice = Random.Range(0, ActiveJester.UnscathedPerformanceLines.Count);
-            TextWindow.text = ActiveJester.UnscathedPerformanceLines[lineChoice];
-        });
-
-        ScathedPerformanceButton.onClick.AddListener(() =>
-        {
-            int lineChoice = Random.Range(0, ActiveJester.ScathedPerformanceLines.Count);
-            TextWindow.text = ActiveJester.ScathedPerformanceLines[lineChoice];
-        });
-
-        DeathButton.onClick.AddListener(() =>
-        {
-            int lineChoice = Random.Range(0, ActiveJester.DeathLines.Count);
-            TextWindow.text = ActiveJester.DeathLines[lineChoice];
-        });
+        AuditionButton.onClick.AddListener(() => TextWindow.text = ActiveJester.FetchRandomAuditionLine());
+        SuccessfulAuditionButton.onClick.AddListener(() => TextWindow.text = ActiveJester.FetchRandomSuccessfulAuditionLine());
+        SuccessfulPerformanceButton.onClick.AddListener(() => TextWindow.text = ActiveJester.FetchRandomSuccessfulPerformanceLine());
+        UnscathedPerformanceButton.onClick.AddListener(() => TextWindow.text = ActiveJester.FetchRandomUnscathedPerformanceLine());
+        ScathedPerformanceButton.onClick.AddListener(() => TextWindow.text = ActiveJester.FetchRandomScathedPerformanceLines());
+        DeathButton.onClick.AddListener(() => TextWindow.text = ActiveJester.FetchRandomDeathLine());
     }
 
     public void ChangeJester(int choice)
