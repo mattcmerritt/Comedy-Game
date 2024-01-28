@@ -953,7 +953,7 @@ MonoBehaviour:
   TavernBackground: {fileID: 123681066}
   ThroneRoomBackground: {fileID: 290967381}
   BackgroundCanvas: {fileID: 1457716645}
-  TransitionDuration: 20
+  TransitionDuration: 5
 --- !u!4 &1906388305
 Transform:
   m_ObjectHideFlags: 0

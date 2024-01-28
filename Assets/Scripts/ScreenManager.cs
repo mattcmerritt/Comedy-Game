@@ -34,13 +34,9 @@ public class ScreenManager : MonoBehaviour
         AuditionScreen.SetActive(true);
         CustomizationScreen.SetActive(false);
         PerformanceScreen.SetActive(false);
-<<<<<<< Updated upstream
-
         TavernBackground.SetActive(true);
         ThroneRoomBackground.SetActive(false);
-=======
         MusicManager.GetComponent<MusicManager>().SwitchMusic("Audition");
->>>>>>> Stashed changes
     }
 
     public void ShowCustomizationScreen()
