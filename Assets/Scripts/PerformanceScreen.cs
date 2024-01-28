@@ -64,6 +64,13 @@ public class PerformanceScreen : MonoBehaviour
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
         yield return StartCoroutine(JesterExit());
+
+        // feedback
+        JesterInventory.Instance.EnablePerformanceUI();
+        bool success = OverallScore > 0;
+        yield return StartCoroutine(JesterInventory.Instance.ShowFeedback(0, PerformanceScores[0], success));
+        yield return StartCoroutine(JesterInventory.Instance.ShowFeedback(1, PerformanceScores[1], success));
+        yield return StartCoroutine(JesterInventory.Instance.ShowFeedback(2, PerformanceScores[2], success));
     }
 
     public IEnumerator JesterEnter()

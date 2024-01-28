@@ -45,7 +45,6 @@ public class ScreenManager : MonoBehaviour
     public void ShowPerformanceScreen()
     {
         StartCoroutine(ThroneRoomTransition());
-        
     }
 
     public IEnumerator ThroneRoomTransition()
@@ -60,6 +59,5 @@ public class ScreenManager : MonoBehaviour
         AuditionScreen.SetActive(false);
         CustomizationScreen.SetActive(false);
         PerformanceScreen.SetActive(true);
-        
     }
 }

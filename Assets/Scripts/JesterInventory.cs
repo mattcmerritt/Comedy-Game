@@ -1,20 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class JesterInventory : MonoBehaviour
 {
     [SerializeField] private List<Jester> SelectedJesters;
     [SerializeField] private int TroupeSize;
+    [SerializeField] private int RemovedPerformers;
 
     [SerializeField] public static JesterInventory Instance;
 
     [SerializeField] private InventoryScroll[] AuditionScrolls;
     [SerializeField] private CustomizationScroll[] CustomizationScrolls;
+    [SerializeField] private PerformanceScroll[] PerformanceScrolls;
 
     [SerializeField] private List<Item> Items;
 
     [SerializeField] private GameObject AuditionUI, CustomizationUI, PerformanceUI;
+    [SerializeField] private TMP_Text CharacterMessageBox;
+
+    [SerializeField] private float CardAnimationTimer;
 
     private void Start()
     {
@@ -66,6 +72,7 @@ public class JesterInventory : MonoBehaviour
     {
         AuditionUI.SetActive(true);
         CustomizationUI.SetActive(false);
+        PerformanceUI.SetActive(false);
     }
 
     public void EnableCustomizationUI()
@@ -77,12 +84,19 @@ public class JesterInventory : MonoBehaviour
         }
         AuditionUI.SetActive(false);
         CustomizationUI.SetActive(true);
+        PerformanceUI.SetActive(false);
     }
 
     public void EnablePerformanceUI()
     {
+        // set up customization scrolls with jesters
+        for (int i = 0; i < TroupeSize; i++)
+        {
+            PerformanceScrolls[i].SetJester(AuditionScrolls[i].GetJester());
+        }
+        AuditionUI.SetActive(false);
         CustomizationUI.SetActive(false);
-        // PerformanceUI.SetActive(true);
+        PerformanceUI.SetActive(true);
     }
 
     public List<Item> GetItemList()
@@ -101,14 +115,58 @@ public class JesterInventory : MonoBehaviour
 
     public void GoToPerformance()
     {
-        EnablePerformanceUI();
+        RemovedPerformers = 0;
+        CustomizationUI.SetActive(false);
         ScreenManager.Instance.ShowPerformanceScreen();
     }
 
-    /*
+    public void GoToAudition()
+    {
+        // need to refresh slots
+        EnableAuditionUI();
+        ScreenManager.Instance.ShowAuditionScreen();
+    }
+
     public IEnumerator ShowFeedback(int index, int score, bool successfulPerformance)
     {
+        string chosenLine;
+        // lines
+        if (successfulPerformance)
+        {
+            // success and scored means successful performance
+            if (score > 0)
+            {
+                chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomSuccessfulPerformanceLine();
+            }
+            // otherwise unscathed
+            else
+            {
+                chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomUnscathedPerformanceLine();
+            }
+        }
+        else
+        {
+            if (score > 0)
+            {
+                chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomUnscathedPerformanceLine();
+            }
+            if (score == 0)
+            {
+                chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomScathedPerformanceLines();
+            }
+            else
+            {
+                chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomDeathLine();
+                // SelectedJesters.Remove(SelectedJesters[index]);
+                // RemovedPerformers++;
+                PerformanceScrolls[index].MarkAsExecuted();
+            }
+        }
 
+        // updating the banner reaction
+        PerformanceScrolls[index].SetReactionSprite(score);
+        CharacterMessageBox.text = chosenLine;
+        PerformanceScrolls[index].PlayHighlightAnimation();
+        yield return new WaitForSeconds(CardAnimationTimer);
     }
-    */
 }
