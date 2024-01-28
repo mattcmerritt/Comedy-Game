@@ -71,7 +71,11 @@ public class AuditionScreen : MonoBehaviour
     public void RecruitJester()
     {
         AudioClip hire = audioManager.GetComponent<AudioManager>().GetHiringClip(CurrentJester.VoiceBankNum);
-        audioManager.GetComponent<AudioSource>().PlayOneShot(hire);
+        if (hire != null && audioManager.GetComponent<AudioSource>() != null)
+        {
+            audioManager.GetComponent<AudioSource>().PlayOneShot(hire);
+        }
+        
         bool added = JesterInventory.Instance.AddJester(CurrentJester);
 
         if (added)
