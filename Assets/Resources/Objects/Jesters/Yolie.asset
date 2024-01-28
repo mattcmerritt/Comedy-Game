@@ -32,4 +32,4 @@ MonoBehaviour:
   - '"Snakes? SNAKES?? I WANTED TO DIE BY DRAGONNN!!"'
   CostumeSprite: {fileID: 289116498, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
   IdleSprite: {fileID: -1877225262, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 1

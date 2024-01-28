@@ -32,4 +32,4 @@ MonoBehaviour:
   - '"Death by snake? Who could have POSSIBLY seen this one coming."'
   CostumeSprite: {fileID: 1524538829, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
   IdleSprite: {fileID: 901066690, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 4

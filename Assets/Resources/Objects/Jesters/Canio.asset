@@ -31,4 +31,4 @@ MonoBehaviour:
   - '"Death, the inevitable end to tha'' beautiful performance of life."'
   CostumeSprite: {fileID: 973266054, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
   IdleSprite: {fileID: 1121870918, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 3

@@ -34,4 +34,4 @@ MonoBehaviour:
     this!!'
   CostumeSprite: {fileID: -1276834711, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
   IdleSprite: {fileID: -807742865, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 4

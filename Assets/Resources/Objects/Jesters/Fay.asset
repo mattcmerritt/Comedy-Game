@@ -35,4 +35,4 @@ MonoBehaviour:
   - '"Death is but another stop aboard this neverending carriage of life."'
   CostumeSprite: {fileID: -156873774, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
   IdleSprite: {fileID: -1368419150, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 4

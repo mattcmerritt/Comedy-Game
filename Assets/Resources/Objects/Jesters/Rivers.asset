@@ -31,4 +31,4 @@ MonoBehaviour:
   - '"Dragged to my death by idiots! I always knew it would end like this!"'
   CostumeSprite: {fileID: -625594721, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
   IdleSprite: {fileID: 201266153, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 1
