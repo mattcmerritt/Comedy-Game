@@ -409,6 +409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Performance Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 2513697055040538810, guid: 6e7fedd1944c5f943a6d0945a864587a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5600027210388939280, guid: 6e7fedd1944c5f943a6d0945a864587a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -465,6 +469,10 @@ PrefabInstance:
     - target: {fileID: 5125951729709642406, guid: 83ccfdda6f4a08f469aaa8739db82e67, type: 3}
       propertyPath: m_Name
       value: Customization Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125951729709642406, guid: 83ccfdda6f4a08f469aaa8739db82e67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7445944622454307561, guid: 83ccfdda6f4a08f469aaa8739db82e67, type: 3}
       propertyPath: m_LocalPosition.x
