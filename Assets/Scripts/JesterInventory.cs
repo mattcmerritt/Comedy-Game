@@ -20,12 +20,12 @@ public class JesterInventory : MonoBehaviour
     {
         if (SelectedJesters.Count < TroupeSize)
         {
-            SelectedJesters.Add(jester);
             bool spotFound = false;
             for (int i = 0; i < TroupeSize; i++)
             {
                 if (!Scrolls[i].CheckForJester() && !spotFound)
                 {
+                    SelectedJesters.Insert(i, jester);
                     Scrolls[i].SetJester(jester);
                     spotFound = true;
                 }
@@ -41,5 +41,13 @@ public class JesterInventory : MonoBehaviour
     public Jester GetJester(int index)
     {
         return SelectedJesters[index];
+    }
+
+    public void RemoveJester(int slotIndex)
+    {
+        Jester jesterToRemove = Scrolls[slotIndex].GetJester();
+        SelectedJesters.Remove(jesterToRemove);
+        Scrolls[slotIndex].SetJester(null);
+        FindObjectOfType<AuditionScreen>().ReturnJester(jesterToRemove);
     }
 }
