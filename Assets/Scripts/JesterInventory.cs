@@ -38,6 +38,11 @@ public class JesterInventory : MonoBehaviour
         }
     }
 
+    public Jester GetJester(int index)
+    {
+        return SelectedJesters[index];
+    }
+
     public void RemoveJester(int slotIndex)
     {
         Jester jesterToRemove = Scrolls[slotIndex].GetJester();
