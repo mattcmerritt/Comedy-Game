@@ -44,7 +44,7 @@ public class PerformanceScreen : MonoBehaviour
         // show character 1
         ActiveJester = JesterInventory.Instance.GetJester(0);
         ActiveItem = JesterInventory.Instance.GetJestersItem(0);
-        CurrentlyPerformingCharacter.LoadJester(ActiveJester);
+        CurrentlyPerformingCharacter.LoadJester(ActiveJester,1 );
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
         yield return StartCoroutine(JesterExit());
@@ -52,7 +52,7 @@ public class PerformanceScreen : MonoBehaviour
         // show character 2
         ActiveJester = JesterInventory.Instance.GetJester(1);
         ActiveItem = JesterInventory.Instance.GetJestersItem(1);
-        CurrentlyPerformingCharacter.LoadJester(ActiveJester);
+        CurrentlyPerformingCharacter.LoadJester(ActiveJester, 1);
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
         yield return StartCoroutine(JesterExit());
@@ -60,7 +60,7 @@ public class PerformanceScreen : MonoBehaviour
         // show character 3
         ActiveJester = JesterInventory.Instance.GetJester(2);
         ActiveItem = JesterInventory.Instance.GetJestersItem(2);
-        CurrentlyPerformingCharacter.LoadJester(ActiveJester);
+        CurrentlyPerformingCharacter.LoadJester(ActiveJester, 1);
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
         yield return StartCoroutine(JesterExit());

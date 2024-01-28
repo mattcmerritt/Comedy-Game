@@ -104,4 +104,11 @@ public class JesterInventory : MonoBehaviour
         EnablePerformanceUI();
         ScreenManager.Instance.ShowPerformanceScreen();
     }
+
+    /*
+    public IEnumerator ShowFeedback(int index, int score, bool successfulPerformance)
+    {
+
+    }
+    */
 }

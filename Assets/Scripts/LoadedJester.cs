@@ -15,23 +15,26 @@ public class LoadedJester : MonoBehaviour
     {
         if (ActiveJester != null)
         {
-            UpdateVisual();
+            UpdateVisual(0);
         }
     }
 
-    public void LoadJester(Jester jester)
+    public void LoadJester(Jester jester, int costume)
     {
         ActiveJester = jester;
 
-        UpdateVisual();
+        UpdateVisual(costume);
     }
 
-    private void UpdateVisual()
+    private void UpdateVisual(int costume)
     {
-        // TODO: remove this check, all jesters should have sprites
-        if (ActiveJester.IdleSprite != null)
+        if (costume == 0)
         {
             SpriteComponent.sprite = ActiveJester.IdleSprite;
+        }
+        else
+        {
+            SpriteComponent.sprite = ActiveJester.CostumeSprite;
         }
     }
 }

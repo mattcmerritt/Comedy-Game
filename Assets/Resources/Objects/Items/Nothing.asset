@@ -15,4 +15,4 @@ MonoBehaviour:
   HumorStat:
     Type: 0
     Value: 0
-  ItemImage: {fileID: -708575857, guid: aebcaaae3df4b42a1a5ca36c9bedc0c3, type: 3}
+  ItemImage: {fileID: 21300000, guid: 54031f437526eef43897fb96aff2c127, type: 3}

@@ -81,7 +81,7 @@ public class AuditionScreen : MonoBehaviour
     // updates the visual in the scene to reflect the new jester
     public void UpdateJesterVisual()
     {
-        LoadedJester.LoadJester(CurrentJester);
+        LoadedJester.LoadJester(CurrentJester, 0);
     }
 
     // put a jester back in the recruitment pool (used by remove button)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class ScreenManager : MonoBehaviour
 {
@@ -8,9 +9,23 @@ public class ScreenManager : MonoBehaviour
 
     public static ScreenManager Instance;
 
+    [SerializeField] private VideoPlayer Cutscene;
+    [SerializeField] private GameObject TavernBackground, ThroneRoomBackground, BackgroundCanvas;
+
+    [SerializeField] private float TransitionDuration;
+
     private void Start()
     {
         Instance = this;
+    }
+
+    public void HideAll()
+    {
+        AuditionScreen.SetActive(false);
+        CustomizationScreen.SetActive(false);
+        PerformanceScreen.SetActive(false);
+
+        BackgroundCanvas.SetActive(false);
     }
 
     public void ShowAuditionScreen()
@@ -29,8 +44,22 @@ public class ScreenManager : MonoBehaviour
 
     public void ShowPerformanceScreen()
     {
+        StartCoroutine(ThroneRoomTransition());
+        
+    }
+
+    public IEnumerator ThroneRoomTransition()
+    {
+        Cutscene.Play();
+        yield return new WaitUntil(() => { return Cutscene.isPlaying; });
+        HideAll();
+        TavernBackground.SetActive(false);
+        ThroneRoomBackground.SetActive(true);
+        yield return new WaitForSeconds(TransitionDuration);
+        BackgroundCanvas.SetActive(true);
         AuditionScreen.SetActive(false);
         CustomizationScreen.SetActive(false);
         PerformanceScreen.SetActive(true);
+        
     }
 }
