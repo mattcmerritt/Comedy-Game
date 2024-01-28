@@ -662,7 +662,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2b57b6a9f222043c8afb023de2bbab3e, type: 3}
   - {fileID: 8300000, guid: 1c6bac91d31594f4e86f50f30b0e2825, type: 3}
   - {fileID: 8300000, guid: a09f18b35d62f4d2ebfc8892b3190dea, type: 3}
-  CrowdClips: []
+  CrowdClips:
+  - {fileID: 8300000, guid: 0e39068b65a75465aa2311a495c997c3, type: 3}
+  - {fileID: 8300000, guid: 397456ae9cc8b4fd59a98278d1c51594, type: 3}
+  - {fileID: 8300000, guid: 743e4f325d21a30468696906eaad114e, type: 3}
   JHire1:
   - {fileID: 8300000, guid: 0ddbb5747be014bbc9e2bdd50d83d9f0, type: 3}
   - {fileID: 8300000, guid: fff7e75e743134c8680f1c89df67e4cf, type: 3}
@@ -1545,6 +1548,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3102389381732344757, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
+      propertyPath: AudioManager
+      value: 
+      objectReference: {fileID: 541243950}
     - target: {fileID: 3193285247774446474, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_IsActive
       value: 0
