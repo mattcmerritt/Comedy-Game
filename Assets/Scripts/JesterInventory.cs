@@ -5,6 +5,7 @@ using TMPro;
 
 public class JesterInventory : MonoBehaviour
 {
+    [SerializeField] GameObject AudioManager;
     [SerializeField] private List<Jester> SelectedJesters;
     [SerializeField] private int TroupeSize;
     [SerializeField] private int RemovedPerformers;
@@ -142,6 +143,7 @@ public class JesterInventory : MonoBehaviour
     public IEnumerator ShowFeedback(int index, int score, bool successfulPerformance)
     {
         string chosenLine;
+        AudioClip jesterLine = null;
         // lines
         if (successfulPerformance)
         {
@@ -149,11 +151,13 @@ public class JesterInventory : MonoBehaviour
             if (score > 0)
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomSuccessfulPerformanceLine();
+                jesterLine = AudioManager.GetComponent<AudioManager>().GetPerfGoodClip(SelectedJesters[index - RemovedPerformers].VoiceBankNum);
             }
             // otherwise unscathed
             else
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomUnscathedPerformanceLine();
+                jesterLine = AudioManager.GetComponent<AudioManager>().GetPerfBadClip(SelectedJesters[index - RemovedPerformers].VoiceBankNum);
             }
         }
         else
@@ -161,14 +165,17 @@ public class JesterInventory : MonoBehaviour
             if (score > 0)
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomUnscathedPerformanceLine();
+                jesterLine = AudioManager.GetComponent<AudioManager>().GetPerfBadClip(SelectedJesters[index - RemovedPerformers].VoiceBankNum);
             }
             else if (score == 0)
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomScathedPerformanceLines();
+                jesterLine = AudioManager.GetComponent<AudioManager>().GetPerfBadClip(SelectedJesters[index - RemovedPerformers].VoiceBankNum);
             }
             else
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomDeathLine();
+                jesterLine = AudioManager.GetComponent<AudioManager>().GetDeathClip(SelectedJesters[index - RemovedPerformers].VoiceBankNum);
                 SelectedJesters.Remove(SelectedJesters[index - RemovedPerformers]);
                 RemovedPerformers++;
                 PerformanceScrolls[index].MarkAsExecuted();
@@ -178,6 +185,11 @@ public class JesterInventory : MonoBehaviour
         // updating the banner reaction
         PerformanceScrolls[index].SetReactionSprite(score);
         CharacterMessageBox.text = chosenLine;
+        //play jester reaction
+        if (jesterLine != null)
+        {
+            AudioManager.GetComponent<AudioSource>().PlayOneShot(jesterLine);
+        }
         PerformanceScrolls[index].PlayHighlightAnimation();
         yield return new WaitForSeconds(CardAnimationTimer);
     }

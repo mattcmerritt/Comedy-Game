@@ -136,7 +136,11 @@ public class PerformanceScreen : MonoBehaviour
             kingClip = AudioManager.GetComponent<AudioManager>().GetKingClip(1);
         }
 
-        AudioManager.GetComponent<AudioSource>().PlayOneShot(kingClip);
+        //play sound reaction
+        if (kingClip != null)
+        {
+            AudioManager.GetComponent<AudioSource>().PlayOneShot(kingClip);
+        }
         KingReactionAnimator.SetTrigger("React");
         yield return new WaitForSeconds(ReactAnimationDuration);
 
