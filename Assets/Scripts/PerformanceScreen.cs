@@ -5,6 +5,7 @@ using TMPro;
 
 public class PerformanceScreen : MonoBehaviour
 {
+    [SerializeField] GameObject AudioManager;
     [SerializeField] private List<HumorStat> RequiredHumor;
 
     [SerializeField] private Jester ActiveJester;
@@ -116,19 +117,26 @@ public class PerformanceScreen : MonoBehaviour
         PerformanceScores.Add(currentScore);
         OverallScore += currentScore;
 
+        //audio clip
+        AudioClip kingClip = null;
+
         if (currentScore > 0)
         {
             KingReaction.sprite = PositiveReaction;
+            kingClip = AudioManager.GetComponent<AudioManager>().GetKingClip(0);
         }
         else if (currentScore < 0)
         {
             KingReaction.sprite = NegativeReaction;
+            kingClip = AudioManager.GetComponent<AudioManager>().GetKingClip(2);
         }
         else
         {
             KingReaction.sprite = NeutralReaction;
+            kingClip = AudioManager.GetComponent<AudioManager>().GetKingClip(1);
         }
 
+        AudioManager.GetComponent<AudioSource>().PlayOneShot(kingClip);
         KingReactionAnimator.SetTrigger("React");
         yield return new WaitForSeconds(ReactAnimationDuration);
 
