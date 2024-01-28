@@ -83,4 +83,10 @@ public class AuditionScreen : MonoBehaviour
     {
         LoadedJester.LoadJester(CurrentJester);
     }
+
+    // put a jester back in the recruitment pool (used by remove button)
+    public void ReturnJester(Jester jester)
+    {
+        LoadedJesters.Add(jester);
+    }
 }
