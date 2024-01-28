@@ -39,6 +39,11 @@ public class PerformanceScreen : MonoBehaviour
         }
     }
 
+    public void SetKingPreferences(List<HumorStat> newReqs)
+    {
+        RequiredHumor = newReqs;
+    }
+
     public IEnumerator PlayPerformance()
     {
         // show character 1
