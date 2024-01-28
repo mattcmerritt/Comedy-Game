@@ -29,3 +29,6 @@ MonoBehaviour:
     None could possibly understand."'
   DeathLines:
   - '"Marched right to my death, just as the fortune teller in Bavaria foretold!"'
+  CostumeSprite: {fileID: 1791460518, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  IdleSprite: {fileID: 979050866, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  VoiceBankNum: 0

@@ -30,3 +30,6 @@ MonoBehaviour:
     tomatos."'
   DeathLines:
   - '"Ah... this joke is not funny at all..."'
+  CostumeSprite: {fileID: -166957945, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  IdleSprite: {fileID: -680086528, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  VoiceBankNum: 0

@@ -28,3 +28,6 @@ MonoBehaviour:
   - '*Garofalo sticks out their tongue and ducks to avoid the tomatos.*'
   DeathLines:
   - '*Garofalo cowers in fear, shaking and crying.*'
+  CostumeSprite: {fileID: 655275875, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  IdleSprite: {fileID: -289675691, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  VoiceBankNum: 0

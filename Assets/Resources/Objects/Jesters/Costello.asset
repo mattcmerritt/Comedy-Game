@@ -32,3 +32,6 @@ MonoBehaviour:
   - '"Tomatos! Fish hate tomatos! Keep those away from me!"'
   DeathLines:
   - '"This is no laughing matter! Someone, reel me up!"'
+  CostumeSprite: {fileID: -1494455363, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  IdleSprite: {fileID: -1780964146, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
+  VoiceBankNum: 0
