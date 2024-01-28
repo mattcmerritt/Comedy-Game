@@ -16,7 +16,11 @@ public class Jester : ScriptableObject
     [TextArea] public List<string> DeathLines;
 
     // visual information for jester
+    public Sprite CostumeSprite;
     public Sprite IdleSprite;
+
+    //audio information for jester (Spencer, Callandra, Kyle, Annie, Amari)
+    public int VoiceBankNum;
 
     // functions to fetch random dialogue lines during gameplay
     public string FetchRandomAuditionLine()
