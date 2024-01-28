@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     //Voice bank reference: 1-Spencer, 2-Callandra, 3-Kyle, 4-Annie, 5-Amari
 
     [SerializeField] List<AudioClip> KingClips = new List<AudioClip>();
+    [SerializeField] List<AudioClip> CrowdClips = new List<AudioClip>();
 
     //organizes hiring audio per voice bank
     [SerializeField] List<AudioClip> JHire1 = new List<AudioClip>();
@@ -41,6 +42,12 @@ public class AudioManager : MonoBehaviour
     {
         //currently 1-success, 2-fail, 3-snake pit
         return KingClips[status];
+    }
+
+    //returns an audio clip of the crowd, depending on reaction
+    public AudioClip GetCrowdClip(int status)
+    {
+        return CrowdClips[status];
     }
 
     //returns a hiring audio clip randomized from the requested voice bank
