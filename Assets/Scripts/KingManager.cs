@@ -34,7 +34,7 @@ public class KingManager : MonoBehaviour
         };
 
         int[] possibleValues = new int[] { -2, -1, 0, 1, 2 };
-        int[] numberOfValues = new int[] { 2, 1, 1, 1, 2 }; // must add up to seven
+        int[] numberOfValues = new int[] { 2, 1, 2, 1, 2 }; // must add up to seven
 
         for (int i = 0; i < possibleValues.Length; i++)
         {

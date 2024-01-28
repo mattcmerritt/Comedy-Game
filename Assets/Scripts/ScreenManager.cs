@@ -33,6 +33,9 @@ public class ScreenManager : MonoBehaviour
         AuditionScreen.SetActive(true);
         CustomizationScreen.SetActive(false);
         PerformanceScreen.SetActive(false);
+
+        TavernBackground.SetActive(true);
+        ThroneRoomBackground.SetActive(false);
     }
 
     public void ShowCustomizationScreen()
