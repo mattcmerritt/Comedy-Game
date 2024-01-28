@@ -21,8 +21,14 @@ public class PerformanceScreen : MonoBehaviour
     [SerializeField] private List<int> PerformanceScores;
     [SerializeField] private int OverallScore;
     [SerializeField] private JokeCollection JokeCollection;
+    [SerializeField] private int PerformancesWithKing;
 
     private bool Started;
+
+    private void Start()
+    {
+        PerformancesWithKing = 0;
+    }
 
     private void OnEnable()
     {
@@ -35,6 +41,18 @@ public class PerformanceScreen : MonoBehaviour
     {
         if (!Started)
         {
+            if(PerformancesWithKing >= 3)
+            {
+                KingManager km = FindObjectOfType<KingManager>();
+                km.GenerateNewKing();
+                SetKingPreferences(km.GetPreferences());
+                PerformancesWithKing = 0;
+                Debug.Log("A new king has been generated!");
+            }
+            else
+            {
+                PerformancesWithKing += 1;
+            }
             Started = true;
             StartCoroutine(PlayPerformance());
         }

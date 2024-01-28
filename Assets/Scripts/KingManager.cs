@@ -63,4 +63,9 @@ public class KingManager : MonoBehaviour
         GenerateNewPreferences();
         ChangeKingSprite();
     }
+
+    public List<HumorStat> GetPreferences()
+    {
+        return RequiredHumor;
+    }
 }
