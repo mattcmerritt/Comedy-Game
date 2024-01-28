@@ -5,14 +5,15 @@ using UnityEngine.Video;
 
 public class ScreenManager : MonoBehaviour
 {
-    [SerializeField] private GameObject AuditionScreen, CustomizationScreen, PerformanceScreen;
+    [SerializeField] private GameObject AuditionScreen, CustomizationScreen, PerformanceScreen, MusicManager;
 
     public static ScreenManager Instance;
 
     [SerializeField] private VideoPlayer Cutscene;
     [SerializeField] private GameObject TavernBackground, ThroneRoomBackground, BackgroundCanvas;
-
+    
     [SerializeField] private float TransitionDuration;
+
 
     private void Start()
     {
@@ -33,9 +34,13 @@ public class ScreenManager : MonoBehaviour
         AuditionScreen.SetActive(true);
         CustomizationScreen.SetActive(false);
         PerformanceScreen.SetActive(false);
+<<<<<<< Updated upstream
 
         TavernBackground.SetActive(true);
         ThroneRoomBackground.SetActive(false);
+=======
+        MusicManager.GetComponent<MusicManager>().SwitchMusic("Audition");
+>>>>>>> Stashed changes
     }
 
     public void ShowCustomizationScreen()
@@ -53,11 +58,13 @@ public class ScreenManager : MonoBehaviour
     public IEnumerator ThroneRoomTransition()
     {
         Cutscene.Play();
+        MusicManager.GetComponent<MusicManager>().SwitchMusic("Transition");
         yield return new WaitUntil(() => { return Cutscene.isPlaying; });
         HideAll();
         TavernBackground.SetActive(false);
         ThroneRoomBackground.SetActive(true);
         yield return new WaitForSeconds(TransitionDuration);
+        MusicManager.GetComponent<MusicManager>().SwitchMusic("Performance");
         BackgroundCanvas.SetActive(true);
         AuditionScreen.SetActive(false);
         CustomizationScreen.SetActive(false);
