@@ -638,6 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 541243952}
   - component: {fileID: 541243951}
+  - component: {fileID: 541243953}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -661,6 +662,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2b57b6a9f222043c8afb023de2bbab3e, type: 3}
   - {fileID: 8300000, guid: 1c6bac91d31594f4e86f50f30b0e2825, type: 3}
   - {fileID: 8300000, guid: a09f18b35d62f4d2ebfc8892b3190dea, type: 3}
+  CrowdClips:
+  - {fileID: 8300000, guid: 0e39068b65a75465aa2311a495c997c3, type: 3}
+  - {fileID: 8300000, guid: 397456ae9cc8b4fd59a98278d1c51594, type: 3}
+  - {fileID: 8300000, guid: 743e4f325d21a30468696906eaad114e, type: 3}
   JHire1:
   - {fileID: 8300000, guid: 0ddbb5747be014bbc9e2bdd50d83d9f0, type: 3}
   - {fileID: 8300000, guid: fff7e75e743134c8680f1c89df67e4cf, type: 3}
@@ -675,15 +680,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 32ca3ee747483491fa9e748b6cb37cea, type: 3}
   - {fileID: 8300000, guid: 25bce79e91b09440c857d23907f5e5c5, type: 3}
   JHire5: []
-  JPerfGood1: []
+  JPerfGood1:
+  - {fileID: 8300000, guid: 2afc78753cde74a4c9ba42a39093a761, type: 3}
   JPerfGood2: []
-  JPerfGood3: []
-  JPerfGood4: []
+  JPerfGood3:
+  - {fileID: 8300000, guid: e885722eea9a9447db0d33a097a012f7, type: 3}
+  JPerfGood4:
+  - {fileID: 8300000, guid: c2f5649e32bb544b89832f3c340344d5, type: 3}
   JPerfGood5: []
-  JPerfBad1: []
+  JPerfBad1:
+  - {fileID: 8300000, guid: d0d4733dd5db14c48ab39d0578eaf246, type: 3}
   JPerfBad2: []
-  JPerfBad3: []
-  JPerfBad4: []
+  JPerfBad3:
+  - {fileID: 8300000, guid: dc0eab70df9cd436c8d446cba7ce39b2, type: 3}
+  JPerfBad4:
+  - {fileID: 8300000, guid: d2df1add831b5431f929cb7c8ed2f19a, type: 3}
   JPerfBad5: []
   JDeath1:
   - {fileID: 8300000, guid: 0075eb7c29707426f882506f5cf49e74, type: 3}
@@ -710,6 +721,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &541243953
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541243950}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &699086343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,6 +1273,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1059593916412726957, guid: 87b8b6ca4fa9cee4e94a7fce629d1d59, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 541243950}
     - target: {fileID: 1878677318078262614, guid: 87b8b6ca4fa9cee4e94a7fce629d1d59, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1347,6 +1458,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2209807298957040237, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
     - target: {fileID: 2779810295659275428, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1386,6 +1501,10 @@ PrefabInstance:
     - target: {fileID: 3373021295657291517, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_Name
       value: Jester Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749663298835990565, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 4100030016479160586, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_IsActive
@@ -1450,6 +1569,10 @@ PrefabInstance:
     - target: {fileID: 7061946719707131344, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_Name
       value: PerformanceStateChecker
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198116936388702247, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 7933615588584961521, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_LocalPosition.x
