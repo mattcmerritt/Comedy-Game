@@ -10,6 +10,8 @@ public class InventoryScroll : MonoBehaviour
     [SerializeField] private Image HumorIcon;
     [SerializeField] private GameObject RemoveButton;
 
+    [SerializeField] private Sprite AbsurdismIcon, AnecdoteIcon, DarkIcon, ImprovIcon, PropIcon, PunIcon, SarcasmIcon, SlapstickIcon;
+
     public void SetJester(Jester jester)
     {
         Jester = jester;
@@ -38,7 +40,42 @@ public class InventoryScroll : MonoBehaviour
         {
             JesterSprite.sprite = jester.IdleSprite;
             JesterSprite.color = new Color(255, 255, 255, 255);
-            HumorIcon.sprite = jester.IdleSprite;
+            
+            foreach(HumorStat humorStat in jester.HumorStats)
+            {
+                if(jester.HumorStats[0].Type == ComedyType.Absurdist)
+                {  
+                    HumorIcon.sprite = AbsurdismIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Anecdotal)
+                {  
+                    HumorIcon.sprite = AnecdoteIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Dark)
+                {  
+                    HumorIcon.sprite = DarkIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Improv)
+                {  
+                    HumorIcon.sprite = ImprovIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Prop)
+                {  
+                    HumorIcon.sprite = PropIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Puns)
+                {  
+                    HumorIcon.sprite = PunIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Sarcastic)
+                {  
+                    HumorIcon.sprite = SarcasmIcon; 
+                }
+                else if(jester.HumorStats[0].Type == ComedyType.Slapstick)
+                {  
+                    HumorIcon.sprite = SlapstickIcon; 
+                }
+            }
             HumorIcon.color = new Color(255, 255, 255, 255);
         }
     }

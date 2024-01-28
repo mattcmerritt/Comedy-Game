@@ -1428,6 +1428,14 @@ MonoBehaviour:
   JesterSprite: {fileID: 3550151442443398272}
   HumorIcon: {fileID: 6072863432321165275}
   RemoveButton: {fileID: 4637552353504717245}
+  AbsurdismIcon: {fileID: 21300000, guid: 7b8d12a4a99b24c889d3b5842880a9db, type: 3}
+  AnecdoteIcon: {fileID: 21300000, guid: 9d58693d5dda4429c9ee2d30747f7dba, type: 3}
+  DarkIcon: {fileID: 21300000, guid: fc752e410ad5c45749a8135bc51f4085, type: 3}
+  ImprovIcon: {fileID: 21300000, guid: 261f1c18572e34a17a8a8fb290fc16d9, type: 3}
+  PropIcon: {fileID: 21300000, guid: 38dc15ad89f064cd3be51a3757dd38e7, type: 3}
+  PunIcon: {fileID: 21300000, guid: cc936ccad18be450685d1885340bf1c1, type: 3}
+  SarcasmIcon: {fileID: 21300000, guid: 1329ba737944d4c18a96b5c3282e6384, type: 3}
+  SlapstickIcon: {fileID: 21300000, guid: c5dd1eddb56d74aa1b1844c0abfdefd2, type: 3}
 --- !u!1 &2789202907707022002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3577,9 +3585,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3025635643992829687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4, y: 0.3}
-  m_AnchorMax: {x: 0.6, y: 0.425}
-  m_AnchoredPosition: {x: -0.0000038146973, y: 0}
+  m_AnchorMin: {x: 0.2, y: 0.3}
+  m_AnchorMax: {x: 0.8, y: 0.425}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7528017229268135816
@@ -4015,9 +4023,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4812930723300565560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4, y: 0.3}
-  m_AnchorMax: {x: 0.6, y: 0.425}
-  m_AnchoredPosition: {x: -0.0000038146973, y: 0}
+  m_AnchorMin: {x: 0.2, y: 0.3}
+  m_AnchorMax: {x: 0.8, y: 0.425}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2483028220689348986
@@ -4357,9 +4365,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8555618267890966378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4, y: 0.3}
-  m_AnchorMax: {x: 0.6, y: 0.425}
-  m_AnchoredPosition: {x: -0.0000038146973, y: 0}
+  m_AnchorMin: {x: 0.2, y: 0.3}
+  m_AnchorMax: {x: 0.8, y: 0.425}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &654981989972987902
@@ -4629,6 +4637,14 @@ MonoBehaviour:
   JesterSprite: {fileID: 8325583889495627505}
   HumorIcon: {fileID: 1590127702286862068}
   RemoveButton: {fileID: 1412436747768878733}
+  AbsurdismIcon: {fileID: 21300000, guid: 7b8d12a4a99b24c889d3b5842880a9db, type: 3}
+  AnecdoteIcon: {fileID: 21300000, guid: 9d58693d5dda4429c9ee2d30747f7dba, type: 3}
+  DarkIcon: {fileID: 21300000, guid: fc752e410ad5c45749a8135bc51f4085, type: 3}
+  ImprovIcon: {fileID: 21300000, guid: 261f1c18572e34a17a8a8fb290fc16d9, type: 3}
+  PropIcon: {fileID: 21300000, guid: 38dc15ad89f064cd3be51a3757dd38e7, type: 3}
+  PunIcon: {fileID: 21300000, guid: cc936ccad18be450685d1885340bf1c1, type: 3}
+  SarcasmIcon: {fileID: 21300000, guid: 1329ba737944d4c18a96b5c3282e6384, type: 3}
+  SlapstickIcon: {fileID: 21300000, guid: c5dd1eddb56d74aa1b1844c0abfdefd2, type: 3}
 --- !u!1 &6984884554516279358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5939,6 +5955,14 @@ MonoBehaviour:
   JesterSprite: {fileID: 6434447077811958768}
   HumorIcon: {fileID: 5247510334897732386}
   RemoveButton: {fileID: 7768455841505114447}
+  AbsurdismIcon: {fileID: 21300000, guid: 7b8d12a4a99b24c889d3b5842880a9db, type: 3}
+  AnecdoteIcon: {fileID: 21300000, guid: 9d58693d5dda4429c9ee2d30747f7dba, type: 3}
+  DarkIcon: {fileID: 21300000, guid: fc752e410ad5c45749a8135bc51f4085, type: 3}
+  ImprovIcon: {fileID: 21300000, guid: 261f1c18572e34a17a8a8fb290fc16d9, type: 3}
+  PropIcon: {fileID: 21300000, guid: 38dc15ad89f064cd3be51a3757dd38e7, type: 3}
+  PunIcon: {fileID: 21300000, guid: cc936ccad18be450685d1885340bf1c1, type: 3}
+  SarcasmIcon: {fileID: 21300000, guid: 1329ba737944d4c18a96b5c3282e6384, type: 3}
+  SlapstickIcon: {fileID: 21300000, guid: c5dd1eddb56d74aa1b1844c0abfdefd2, type: 3}
 --- !u!1 &8724052158406296139
 GameObject:
   m_ObjectHideFlags: 0
