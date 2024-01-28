@@ -70,6 +70,18 @@ public class JesterInventory : MonoBehaviour
 
     public void EnableAuditionUI()
     {
+        // set up customization scrolls with jesters
+        for (int i = 0; i < TroupeSize; i++)
+        {
+            if (i < SelectedJesters.Count)
+            {
+                AuditionScrolls[i].SetJester(SelectedJesters[i]);
+            }
+            else
+            {
+                AuditionScrolls[i].SetJester(null);
+            }
+        }
         AuditionUI.SetActive(true);
         CustomizationUI.SetActive(false);
         PerformanceUI.SetActive(false);
@@ -150,15 +162,15 @@ public class JesterInventory : MonoBehaviour
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomUnscathedPerformanceLine();
             }
-            if (score == 0)
+            else if (score == 0)
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomScathedPerformanceLines();
             }
             else
             {
                 chosenLine = SelectedJesters[index - RemovedPerformers].FetchRandomDeathLine();
-                // SelectedJesters.Remove(SelectedJesters[index]);
-                // RemovedPerformers++;
+                SelectedJesters.Remove(SelectedJesters[index - RemovedPerformers]);
+                RemovedPerformers++;
                 PerformanceScrolls[index].MarkAsExecuted();
             }
         }
