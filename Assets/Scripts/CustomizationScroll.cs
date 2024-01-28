@@ -8,8 +8,12 @@ public class CustomizationScroll : MonoBehaviour
     [SerializeField] private Jester Jester;
     [SerializeField] private Item EquippedItem;
     [SerializeField] private Image JesterSprite;
-    [SerializeField] private Image JesterHumorIcon, ItemIcon;
+    [SerializeField] private Image HumorIcon, ItemIcon;
 
+    [SerializeField] private Sprite AbsurdismIcon, AnecdoteIcon, DarkIcon, ImprovIcon, PropIcon, PunIcon, SarcasmIcon, SlapstickIcon;
+
+    [SerializeField] private Item NothingItem;
+    
     void OnEnable()
     {
         UpdateItemSprite();
@@ -53,6 +57,53 @@ public class CustomizationScroll : MonoBehaviour
     public void UpdateItemSprite()
     {
         ItemIcon.sprite = EquippedItem.ItemImage;
+
+        if(EquippedItem == NothingItem)
+        {
+            // make sprite invisible
+            HumorIcon.color = new Color(255, 255, 255, 0);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Absurdist)
+        {  
+            HumorIcon.sprite = AbsurdismIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Anecdotal)
+        {  
+            HumorIcon.sprite = AnecdoteIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Dark)
+        {  
+            HumorIcon.sprite = DarkIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Improv)
+        {  
+            HumorIcon.sprite = ImprovIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Prop)
+        {  
+            HumorIcon.sprite = PropIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Puns)
+        {  
+            HumorIcon.sprite = PunIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Sarcastic)
+        {  
+            HumorIcon.sprite = SarcasmIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        else if(EquippedItem.HumorStat.Type == ComedyType.Slapstick)
+        {  
+            HumorIcon.sprite = SlapstickIcon; 
+            HumorIcon.color = new Color(255, 255, 255, 255);
+        }
+        
     }
 
     // public void SetScrollSprites(Jester jester)
