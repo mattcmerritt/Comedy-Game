@@ -9,11 +9,17 @@ public class JesterInventory : MonoBehaviour
 
     [SerializeField] public static JesterInventory Instance;
 
-    [SerializeField] private InventoryScroll[] Scrolls;
+    [SerializeField] private InventoryScroll[] AuditionScrolls;
+    [SerializeField] private CustomizationScroll[] CustomizationScrolls;
+
+    [SerializeField] private List<Item> Items;
+
+    [SerializeField] private GameObject AuditionUI, CustomizationUI;
 
     private void Start()
     {
         Instance = this;
+        // EnableAuditionUI();
     }
 
     public bool AddJester(Jester jester)
@@ -23,10 +29,10 @@ public class JesterInventory : MonoBehaviour
             bool spotFound = false;
             for (int i = 0; i < TroupeSize; i++)
             {
-                if (!Scrolls[i].CheckForJester() && !spotFound)
+                if (!AuditionScrolls[i].CheckForJester() && !spotFound)
                 {
                     SelectedJesters.Insert(i, jester);
-                    Scrolls[i].SetJester(jester);
+                    AuditionScrolls[i].SetJester(jester);
                     spotFound = true;
                 }
             }
@@ -45,9 +51,39 @@ public class JesterInventory : MonoBehaviour
 
     public void RemoveJester(int slotIndex)
     {
-        Jester jesterToRemove = Scrolls[slotIndex].GetJester();
+        Jester jesterToRemove = AuditionScrolls[slotIndex].GetJester();
         SelectedJesters.Remove(jesterToRemove);
-        Scrolls[slotIndex].SetJester(null);
+        AuditionScrolls[slotIndex].SetJester(null);
         FindObjectOfType<AuditionScreen>().ReturnJester(jesterToRemove);
+    }
+
+    public void EnableAuditionUI()
+    {
+        AuditionUI.SetActive(true);
+        CustomizationUI.SetActive(false);
+    }
+
+    public void EnableCustomizationUI()
+    {
+        // set up customization scrolls with jesters
+        for (int i = 0; i < TroupeSize; i++)
+        {
+            CustomizationScrolls[i].SetJester(AuditionScrolls[i].GetJester());
+        }
+        AuditionUI.SetActive(false);
+        CustomizationUI.SetActive(true);
+    }
+
+    public List<Item> GetItemList()
+    {
+        return Items;
+    }
+
+    public void GoToCustomization()
+    {
+        if(SelectedJesters.Count == TroupeSize)
+        {
+            EnableCustomizationUI();
+        }
     }
 }
