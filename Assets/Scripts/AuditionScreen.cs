@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class AuditionScreen : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class AuditionScreen : MonoBehaviour
 
     // for displaying the jester in the scene
     [SerializeField] private LoadedJester LoadedJester;
+
+    [SerializeField] private TMP_Text Name, Line, Type;
+    [SerializeField] private Image Icon;
 
     private void Awake()
     {
@@ -82,6 +86,10 @@ public class AuditionScreen : MonoBehaviour
     public void UpdateJesterVisual()
     {
         LoadedJester.LoadJester(CurrentJester, 0);
+        Name.text = CurrentJester.Name;
+        Type.text = CurrentJester.HumorStats[0].Type.ToString();
+        Line.text = CurrentJester.FetchRandomAuditionLine();
+        // icon stuff
     }
 
     // put a jester back in the recruitment pool (used by remove button)
