@@ -31,3 +31,6 @@ MonoBehaviour:
   - '"They were silent as the grave out there tonight... not great."'
   DeathLines:
   - '"Well... I think that''s the nail in my coffin."'
+  CostumeSprite: {fileID: -476242442, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: -92461747, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0

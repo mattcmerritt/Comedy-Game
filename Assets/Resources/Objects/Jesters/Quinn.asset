@@ -32,3 +32,6 @@ MonoBehaviour:
   - '"Tough crowd. Tough as the nails they threw at us."'
   DeathLines:
   - '"Ah. The joke was on me all along...!"'
+  CostumeSprite: {fileID: 1584350099, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: -165807016, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0

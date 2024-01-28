@@ -32,3 +32,6 @@ MonoBehaviour:
   DeathLines:
   - '"When I said ''yes and'' to the snake pit suggestion, I didn''t mean it like
     this!!'
+  CostumeSprite: {fileID: -1276834711, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: -807742865, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0

@@ -29,3 +29,6 @@ MonoBehaviour:
     my ages."'
   DeathLines:
   - '"I didn''t have too much time left anyway, kiddo."'
+  CostumeSprite: {fileID: 1643656317, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: -585995977, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0

@@ -30,3 +30,6 @@ MonoBehaviour:
   - '"My foot caught on my petal today and no one found it charming."'
   DeathLines:
   - '"I''m meant to ride unicycles, not a boat down the River Styx!"'
+  CostumeSprite: {fileID: 93879157, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: 956952015, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0

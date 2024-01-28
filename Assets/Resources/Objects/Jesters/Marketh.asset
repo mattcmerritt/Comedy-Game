@@ -30,3 +30,6 @@ MonoBehaviour:
   - '"Maybe I''m not that punny after all..."'
   DeathLines:
   - '"I thought we were headed down funny avensue, but this seems like a dead end."'
+  CostumeSprite: {fileID: -1634664821, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: 1791969742, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0

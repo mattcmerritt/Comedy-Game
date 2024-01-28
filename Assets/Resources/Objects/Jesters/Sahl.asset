@@ -29,3 +29,6 @@ MonoBehaviour:
   - '"How obnoxious. You lot are testing my patience."'
   DeathLines:
   - '"Wait! I''m not ready to die! I still have so much to do!"'
+  CostumeSprite: {fileID: -1379668670, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  IdleSprite: {fileID: -2123672626, guid: a3b4a2feac71848d5aca779c04c9a75a, type: 3}
+  VoiceBankNum: 0
