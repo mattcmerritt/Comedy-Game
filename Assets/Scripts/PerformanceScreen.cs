@@ -8,6 +8,7 @@ public class PerformanceScreen : MonoBehaviour
     [SerializeField] private List<HumorStat> RequiredHumor;
 
     [SerializeField] private Jester ActiveJester;
+    [SerializeField] private Item ActiveItem;
     [SerializeField] private LoadedJester CurrentlyPerformingCharacter;
     [SerializeField] private Animator CharacterAnimator, SpeechBubbleAnimator, KingReactionAnimator;
     [SerializeField] private SpriteRenderer KingReaction;
@@ -17,12 +18,16 @@ public class PerformanceScreen : MonoBehaviour
     [SerializeField] private float EnterAnimationDuration, ReactAnimationDuration, ExitAnimationDuration, SpeechBubbleAppearDuration, SpeechBubbleDisappearDuration;
 
     [SerializeField] private List<int> PerformanceScores;
+    [SerializeField] private int OverallScore;
+    [SerializeField] private JokeCollection JokeCollection;
 
     private bool Started;
 
     private void OnEnable()
     {
         Started = false;
+        PerformanceScores = new List<int>();
+        OverallScore = 0;
     }
 
     private void Update()
@@ -38,6 +43,7 @@ public class PerformanceScreen : MonoBehaviour
     {
         // show character 1
         ActiveJester = JesterInventory.Instance.GetJester(0);
+        ActiveItem = JesterInventory.Instance.GetJestersItem(0);
         CurrentlyPerformingCharacter.LoadJester(ActiveJester);
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
@@ -45,6 +51,7 @@ public class PerformanceScreen : MonoBehaviour
 
         // show character 2
         ActiveJester = JesterInventory.Instance.GetJester(1);
+        ActiveItem = JesterInventory.Instance.GetJestersItem(1);
         CurrentlyPerformingCharacter.LoadJester(ActiveJester);
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
@@ -52,6 +59,7 @@ public class PerformanceScreen : MonoBehaviour
 
         // show character 3
         ActiveJester = JesterInventory.Instance.GetJester(2);
+        ActiveItem = JesterInventory.Instance.GetJestersItem(2);
         CurrentlyPerformingCharacter.LoadJester(ActiveJester);
         yield return StartCoroutine(JesterEnter());
         yield return StartCoroutine(JesterPerform());
@@ -71,23 +79,30 @@ public class PerformanceScreen : MonoBehaviour
         Debug.Log("Jester Perform");
         // cause the speech bubble to appear
         SpeechBubbleAnimator.SetTrigger("Speak");
-        // SpeechContent.text = ActiveJester.???
+        // populate speech bubble based on humor type
+        SpeechContent.text = JokeCollection.GetRandomJokeLine(ActiveJester.HumorStats[Random.Range(0, ActiveJester.HumorStats.Count)].Type);
         yield return new WaitForSeconds(SpeechBubbleAppearDuration);
 
         // cause the king to play the little animation based on if they were happy, neutral, or angry
         // need to swap the sprite, the animation will cause it to move and fade in and out
         int currentScore = 0;
-        foreach (HumorStat humor in ActiveJester.HumorStats)
+        foreach (HumorStat humorRequirement in RequiredHumor)
         {
-            foreach (HumorStat humorRequirement in RequiredHumor)
+            foreach (HumorStat humor in ActiveJester.HumorStats)
             {
                 if (humor.Type == humorRequirement.Type)
                 {
                     currentScore += humorRequirement.Value;
                 }
             }
+
+            if (ActiveItem.name != "Nothing" && ActiveItem.HumorStat.Type == humorRequirement.Type)
+            {
+                currentScore += humorRequirement.Value;
+            }
         }
         PerformanceScores.Add(currentScore);
+        OverallScore += currentScore;
 
         if (currentScore > 0)
         {

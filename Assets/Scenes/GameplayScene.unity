@@ -215,6 +215,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &450827465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7739302896190137810, guid: 87b8b6ca4fa9cee4e94a7fce629d1d59, type: 3}
+  m_PrefabInstance: {fileID: 591869782684367381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &699086343
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +283,63 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &893019728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5125951729709642406, guid: 83ccfdda6f4a08f469aaa8739db82e67, type: 3}
+  m_PrefabInstance: {fileID: 7927180341150429991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1458114226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2513697055040538810, guid: 6e7fedd1944c5f943a6d0945a864587a, type: 3}
+  m_PrefabInstance: {fileID: 6879983630869929121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1906388303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906388305}
+  - component: {fileID: 1906388304}
+  m_Layer: 0
+  m_Name: Screen Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1906388304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906388303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43580a458c2ac9c4d8ec3a39e009164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AuditionScreen: {fileID: 450827465}
+  CustomizationScreen: {fileID: 893019728}
+  PerformanceScreen: {fileID: 1458114226}
+--- !u!4 &1906388305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906388303}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 397.31955, y: 253.43504, z: -704.5456}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -409,10 +471,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Performance Screen
       objectReference: {fileID: 0}
-    - target: {fileID: 2513697055040538810, guid: 6e7fedd1944c5f943a6d0945a864587a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5600027210388939280, guid: 6e7fedd1944c5f943a6d0945a864587a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -470,10 +528,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Customization Screen
       objectReference: {fileID: 0}
-    - target: {fileID: 5125951729709642406, guid: 83ccfdda6f4a08f469aaa8739db82e67, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7445944622454307561, guid: 83ccfdda6f4a08f469aaa8739db82e67, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -528,4 +582,5 @@ SceneRoots:
   - {fileID: 7927180341150429991}
   - {fileID: 6879983630869929121}
   - {fileID: 5885534302462961554}
+  - {fileID: 1906388305}
   - {fileID: 699086346}

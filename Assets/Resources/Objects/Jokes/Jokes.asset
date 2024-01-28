@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04935c3a013c9424fb718df3605cf4e4, type: 3}
+  m_Name: Jokes
+  m_EditorClassIdentifier: 
+  Jokes:
+  - Type: 0
+    Content: Hey, who left this rake laying here?
+  - Type: 0
+    Content: Why is there just a banana peel on the ground here?
+  - Type: 0
+    Content: I sure hope no one steps on my large fabric rug before I can patch up
+      this giant hole it's covering!
+  - Type: 0
+    Content: I am going to chain this metal ball around my ankle, and stand precariously
+      upon this windowsill. Ah, why is the wind picking up!?
+  - Type: 1
+    Content: What do you get when you cross a duck and a loaf of bread?
+  - Type: 1
+    Content: What has 2 thumbs, and doesn't want to be snake food?
+  - Type: 1
+    Content: What did the cow say to the chicken?
+  - Type: 1
+    Content: What do an executioner and a knitter have in common?
+  - Type: 2
+    Content: Can someone give me a location? Oh, no parks or bakeries. Also no hovels.
+      And it has to fit in a 5ft by 5ft square.
+  - Type: 2
+    Content: Quick, someone name a person! Ok, now name a thing! Ok, now name a place!
+      Ok, now-
+  - Type: 2
+    Content: Hey, you, what's your name? Where are you from? Really? Well...
+  - Type: 2
+    Content: Well according to Descartes, we're all cannibals! ...wait that's not
+      right. uh. uh. DIOGENES.  It was Diogenes.
+  - Type: 3
+    Content: Lancelot, Arthur and Gawain walk into a bar. The bartender asks them,
+      what will it be? Then, the bartender eats them. The bartender was a dragon.
+  - Type: 3
+    Content: My grandmother told me I was built as strong as a tree once! Then, she
+      brought her lumberjack friend over.
+  - Type: 3
+    Content: My teacher once told me that knowledge is power... so I stole the key
+      to the library and locked myself in. Am I a King now too?
+  - Type: 4
+    Content: And now... I will attempt to juggle 2 jugs full of water with only my
+      fingertips! Those of you in the first few rows, welcome to the splash zone!
+  - Type: 4
+    Content: Someone quick, toss me another ball! Let me try and juggle these between
+      my legs, and do a handstand at the same time!
+  - Type: 4
+    Content: This giant metal cube sure is heavy, it would be a shame if someone
+      were to try and use it to juggle...
+  - Type: 4
+    Content: I think I hear the guards coming! Quick, someone bring that conveniently
+      shaped lamp so I can hide behind it!
+  - Type: 5
+    Content: If idiots grew on trees, this place would be an orchard. Now, if I say
+      that the executioner really hates applause, will you give us the biggest round
+      of it?
+  - Type: 5
+    Content: Right, right, you're all happy to see me.  The king is just. Really,
+      so proud to share his love of comedy with the people. And, clearly, the people
+      are so eager to take part in it, yeah? Yeah?
+  - Type: 5
+    Content: It was so kind of you to invite us to this performance, my liege. I
+      definitely didn't have anything else going on in my life, no siree! This will
+      be the best use of my time that I have ever spent, of that I am certain.
+  - Type: 5
+    Content: Oh yes, auditioner, I'm different! I want this job. Absolutely. This
+      job that I am required by the king's decree to audition for. In the die-by-snake-pit
+      kingdom. Absolutely.
+  - Type: 6
+    Content: Once, I traveled all the way to Hessen on the back of a wild boar. Boars,
+      you see, are fascinating creatures.
+  - Type: 6
+    Content: So, the Fair Folk, right? I don't have to explain this. Everyone knows
+      the drill you see a suspicious shape of mushrooms, yada yada. So this one time...
+  - Type: 6
+    Content: Everybody knows somebody who knows somebody who's tried the "courtly
+      love" line, right? My friend's maid was involved in what I can only describe
+      as that but on the fairy shrooms.
+  - Type: 6
+    Content: ...And then - get this - during the commotion she tries to reach for
+      guy's hand, right? But instead she accidentally gets his sword, pulls it out,
+      and there she is in all her fancy dressiness with a big hulking sword...
+  - Type: 7
+    Content: I could tell you lot to shove off back to whatever hovel you crawled
+      out from, and you would cheer like fools.
+  - Type: 7
+    Content: The children yearn for the snake pits.
+  - Type: 7
+    Content: Oh, the town over yonder? Wimps. Absolute wimps.  I could - not even
+      flex at them - but kind of just loom in their direction and they'd die on the
+      spot. Hey! Could be nice. A few less carriers of the plague...

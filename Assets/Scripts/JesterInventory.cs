@@ -14,7 +14,7 @@ public class JesterInventory : MonoBehaviour
 
     [SerializeField] private List<Item> Items;
 
-    [SerializeField] private GameObject AuditionUI, CustomizationUI;
+    [SerializeField] private GameObject AuditionUI, CustomizationUI, PerformanceUI;
 
     private void Start()
     {
@@ -49,6 +49,11 @@ public class JesterInventory : MonoBehaviour
         return SelectedJesters[index];
     }
 
+    public Item GetJestersItem(int index)
+    {
+        return CustomizationScrolls[index].GetItem();
+    }
+
     public void RemoveJester(int slotIndex)
     {
         Jester jesterToRemove = AuditionScrolls[slotIndex].GetJester();
@@ -74,6 +79,12 @@ public class JesterInventory : MonoBehaviour
         CustomizationUI.SetActive(true);
     }
 
+    public void EnablePerformanceUI()
+    {
+        CustomizationUI.SetActive(false);
+        // PerformanceUI.SetActive(true);
+    }
+
     public List<Item> GetItemList()
     {
         return Items;
@@ -81,9 +92,16 @@ public class JesterInventory : MonoBehaviour
 
     public void GoToCustomization()
     {
-        if(SelectedJesters.Count == TroupeSize)
+        if (SelectedJesters.Count == TroupeSize)
         {
             EnableCustomizationUI();
+            ScreenManager.Instance.ShowCustomizationScreen();
         }
+    }
+
+    public void GoToPerformance()
+    {
+        EnablePerformanceUI();
+        ScreenManager.Instance.ShowPerformanceScreen();
     }
 }
