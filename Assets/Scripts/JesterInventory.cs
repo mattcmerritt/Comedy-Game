@@ -37,4 +37,9 @@ public class JesterInventory : MonoBehaviour
             return false;
         }
     }
+
+    public Jester GetJester(int index)
+    {
+        return SelectedJesters[index];
+    }
 }
