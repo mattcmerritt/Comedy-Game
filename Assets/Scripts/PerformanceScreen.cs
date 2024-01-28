@@ -95,6 +95,18 @@ public class PerformanceScreen : MonoBehaviour
         yield return StartCoroutine(JesterInventory.Instance.ShowFeedback(0, PerformanceScores[0], success));
         yield return StartCoroutine(JesterInventory.Instance.ShowFeedback(1, PerformanceScores[1], success));
         yield return StartCoroutine(JesterInventory.Instance.ShowFeedback(2, PerformanceScores[2], success));
+
+        //play crowd reaction audio
+        if (success)
+        {
+            AudioClip crowd = AudioManager.GetComponent<AudioManager>().GetCrowdClip(1);
+            AudioManager.GetComponent<AudioSource>().PlayOneShot(crowd);
+        }
+        else
+        {
+            AudioClip crowd = AudioManager.GetComponent<AudioManager>().GetCrowdClip(2);
+            AudioManager.GetComponent<AudioSource>().PlayOneShot(crowd);
+        }
     }
 
     public IEnumerator JesterEnter()
@@ -154,7 +166,11 @@ public class PerformanceScreen : MonoBehaviour
             kingClip = AudioManager.GetComponent<AudioManager>().GetKingClip(1);
         }
 
-        AudioManager.GetComponent<AudioSource>().PlayOneShot(kingClip);
+        //play sound reaction
+        if (kingClip != null)
+        {
+            AudioManager.GetComponent<AudioSource>().PlayOneShot(kingClip);
+        }
         KingReactionAnimator.SetTrigger("React");
         yield return new WaitForSeconds(ReactAnimationDuration);
 

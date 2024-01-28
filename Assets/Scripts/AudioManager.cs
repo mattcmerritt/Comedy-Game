@@ -133,6 +133,7 @@ public class AudioManager : MonoBehaviour
             case 1:
                 ran = Random.Range(0, JPerfBad1.Count);
                 toReturn = JPerfBad1[ran];
+                Debug.Log(ran);
                 break;
             case 2:
                 ran = Random.Range(0, JPerfBad2.Count);
@@ -141,10 +142,12 @@ public class AudioManager : MonoBehaviour
             case 3:
                 ran = Random.Range(0, JPerfBad3.Count);
                 toReturn = JPerfBad3[ran];
+                Debug.Log(ran);
                 break;
             case 4:
                 ran = Random.Range(0, JPerfBad4.Count);
                 toReturn = JPerfBad4[ran];
+                Debug.Log(ran);
                 break;
             case 5:
                 ran = Random.Range(0, JPerfBad5.Count);
@@ -155,7 +158,7 @@ public class AudioManager : MonoBehaviour
                 toReturn = JPerfBad1[ran];
                 break;
         }
-
+        Debug.Log(ran);
         return toReturn;
     }
 

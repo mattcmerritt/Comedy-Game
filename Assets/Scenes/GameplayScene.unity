@@ -662,7 +662,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2b57b6a9f222043c8afb023de2bbab3e, type: 3}
   - {fileID: 8300000, guid: 1c6bac91d31594f4e86f50f30b0e2825, type: 3}
   - {fileID: 8300000, guid: a09f18b35d62f4d2ebfc8892b3190dea, type: 3}
-  CrowdClips: []
+  CrowdClips:
+  - {fileID: 8300000, guid: 0e39068b65a75465aa2311a495c997c3, type: 3}
+  - {fileID: 8300000, guid: 397456ae9cc8b4fd59a98278d1c51594, type: 3}
+  - {fileID: 8300000, guid: 743e4f325d21a30468696906eaad114e, type: 3}
   JHire1:
   - {fileID: 8300000, guid: 0ddbb5747be014bbc9e2bdd50d83d9f0, type: 3}
   - {fileID: 8300000, guid: fff7e75e743134c8680f1c89df67e4cf, type: 3}
@@ -677,15 +680,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 32ca3ee747483491fa9e748b6cb37cea, type: 3}
   - {fileID: 8300000, guid: 25bce79e91b09440c857d23907f5e5c5, type: 3}
   JHire5: []
-  JPerfGood1: []
+  JPerfGood1:
+  - {fileID: 8300000, guid: 2afc78753cde74a4c9ba42a39093a761, type: 3}
   JPerfGood2: []
-  JPerfGood3: []
-  JPerfGood4: []
+  JPerfGood3:
+  - {fileID: 8300000, guid: e885722eea9a9447db0d33a097a012f7, type: 3}
+  JPerfGood4:
+  - {fileID: 8300000, guid: c2f5649e32bb544b89832f3c340344d5, type: 3}
   JPerfGood5: []
-  JPerfBad1: []
+  JPerfBad1:
+  - {fileID: 8300000, guid: d0d4733dd5db14c48ab39d0578eaf246, type: 3}
   JPerfBad2: []
-  JPerfBad3: []
-  JPerfBad4: []
+  JPerfBad3:
+  - {fileID: 8300000, guid: dc0eab70df9cd436c8d446cba7ce39b2, type: 3}
+  JPerfBad4:
+  - {fileID: 8300000, guid: d2df1add831b5431f929cb7c8ed2f19a, type: 3}
   JPerfBad5: []
   JDeath1:
   - {fileID: 8300000, guid: 0075eb7c29707426f882506f5cf49e74, type: 3}
@@ -1625,6 +1634,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3102389381732344757, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
+      propertyPath: AudioManager
+      value: 
+      objectReference: {fileID: 541243950}
     - target: {fileID: 3193285247774446474, guid: efb78ffa43ac89e4798c8d3654aaa35e, type: 3}
       propertyPath: m_IsActive
       value: 0
