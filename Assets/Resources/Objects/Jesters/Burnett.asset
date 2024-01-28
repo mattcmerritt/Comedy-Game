@@ -31,4 +31,4 @@ MonoBehaviour:
   - '"Oh Burnett, how did you get yourself into this mess...?"'
   CostumeSprite: {fileID: 1677874305, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
   IdleSprite: {fileID: -1508744112, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 4

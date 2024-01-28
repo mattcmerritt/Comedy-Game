@@ -33,4 +33,4 @@ MonoBehaviour:
   - '"No one told me how dangerous comedy could be!"'
   CostumeSprite: {fileID: -873254719, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
   IdleSprite: {fileID: -972595323, guid: c0cba8149163a4a2ebe5b9cf101f90fe, type: 3}
-  VoiceBankNum: 0
+  VoiceBankNum: 4
